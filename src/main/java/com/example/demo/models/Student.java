@@ -6,9 +6,9 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
+@NoArgsConstructor
 @Data
 @Entity
-@NoargsConstructor
 public class Student {
 
     @Id
