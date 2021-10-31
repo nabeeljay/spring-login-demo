@@ -8,7 +8,7 @@ import java.time.Period;
 
 @Data
 @Entity
-@Table
+@NoargsConstructor
 public class Student {
 
     @Id
@@ -29,8 +29,7 @@ public class Student {
     @Transient
     private Integer age;
 
-    public Student() {
-    }
+   
 
     public Student(Long id, String name, String email, LocalDate dob) {
         this.id = id;
