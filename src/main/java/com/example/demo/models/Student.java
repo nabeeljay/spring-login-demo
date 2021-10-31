@@ -6,9 +6,9 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
+@NoArgsConstructor
 @Data
 @Entity
-
 public class Student {
 
     @Id
@@ -29,8 +29,7 @@ public class Student {
     @Transient
     private Integer age;
 
-    public Student() {
-    }
+   
 
     public Student(Long id, String name, String email, LocalDate dob) {
         this.id = id;
