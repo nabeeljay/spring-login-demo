@@ -8,7 +8,7 @@ import java.time.Period;
 
 @Data
 @Entity
-@Table
+
 public class Student {
 
     @Id
